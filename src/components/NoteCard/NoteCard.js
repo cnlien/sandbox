@@ -1,9 +1,11 @@
 import React from 'react';
+import { connect } from 'react-redux';
 
 import './NoteCard.scss';
-import { Card, Row, CardTitle, CardHeader, CardText, CardBody, Button, CardFooter } from 'reactstrap';
+import { Card, Row, CardHeader, CardText, CardBody, Button, CardFooter } from 'reactstrap';
 
 const NoteCard = (props) => {
+    // console.log(props)
     return(
         <Row>
             <Card className="note-card">
@@ -25,4 +27,13 @@ const NoteCard = (props) => {
     )
 }
 
-export default NoteCard;
+const mapStateToProps = (state) => {
+    // console.log(state.notesReducer.notes);
+    return {
+        notes: state.notesReducer.notes
+    }
+}
+
+
+
+export default connect(mapStateToProps, {}) (NoteCard);

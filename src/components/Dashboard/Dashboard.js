@@ -10,8 +10,8 @@ const Dashboard = (props) => {
     const viewHeight = window.innerHeight;
 
     return(
-        <Container className="dashboard" fluid={true} style={{height: viewHeight}}>
-            <Row className="dashboard-row" style={{height: viewHeight}}>
+        <Container className="dashboard" fluid={true} style={{minHeight: viewHeight}}>
+            <Row className="dashboard-row" style={{minHeight: viewHeight}}>
                 <Col md="4 auto" className="sidebar-col">
                     <Sidebar />
                 </Col>

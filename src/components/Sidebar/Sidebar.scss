@@ -2,4 +2,12 @@
 @import '../../styles/variables.scss';
 
 .sidebar {
+    .noteTitle {
+        margin-bottom: 10px;
+    }
+    
+    .newNote {
+        min-height: 250px;
+        margin-bottom: 10px;
+    }
 }
