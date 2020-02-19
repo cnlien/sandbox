@@ -1,0 +1,18 @@
+@import '../../styles/mixins.scss';
+@import '../../styles/variables.scss';
+
+.dashboard {
+  
+    .dashboard-row {
+        align-items: stretch;
+
+        .sidebar-col {
+            background: transparent $primary-gradient no-repeat padding-box;
+            padding-top: 30px;
+        }
+
+        .notes-col {
+            padding-top: 30px;
+        }
+    }
+}
