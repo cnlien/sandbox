@@ -1,7 +1,12 @@
 import React from 'react';
 
+//STYLES
 import './Notes.scss';
+
+// REACTSTRAP COMPONENTS
 import { Container } from 'reactstrap';
+
+// COMPONENTS
 import NoteCard from '../NoteCard/NoteCard.js';
 
 const Notes = (props) => {
