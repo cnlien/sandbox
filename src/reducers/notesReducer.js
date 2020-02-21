@@ -1,4 +1,4 @@
-const initialState = {
+export const initialState = {
     notes: [
         {
             title: "Note Title",
